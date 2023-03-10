@@ -24,7 +24,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg ">
+            <nav className="navbar navbar-expand-lg w-100">
                 <div className="container-fluid">
                     <Link to={'/'} className="logo " ><img src='https://cdn.dribbble.com/users/56251/screenshots/1228786/couch-dribbbs.gif' alt="" /></Link>
 

@@ -33,13 +33,16 @@ const Footer = () => {
                                 <li><a href="#">Carporate</a></li>
                             </ul>
                         </div>
-                        <div className="f-content">
+                        <div className="f-content ">
                             <h3>Following</h3>
-                            <p>Follow us on Social Media</p>
-                            <a href="#"><i className="fa-brands fa-square-facebook"></i></a>
-                            <a href="#"><i className="fa-brands fa-square-instagram mx-3"></i></a>
-                            <a href="#"><i className="fa-brands fa-square-twitter"></i></a>
-                            <a href="#"><i className="fa-brands fa-square-youtube mx-3"></i></a>
+
+                            <div className="ps-4">
+                                <p>Follow us on Social Media</p>
+                                <a href="#"><i className="fa-brands fa-square-facebook"></i></a>
+                                <a href="#"><i className="fa-brands fa-square-instagram mx-3"></i></a>
+                                <a href="#"><i className="fa-brands fa-square-twitter"></i></a>
+                            </div>
+                            {/* <a href="#"><i className="fa-brands fa-square-youtube mx-3"></i></a> */}
                         </div>
                     </div>
                     <div className="copy-right text-center">

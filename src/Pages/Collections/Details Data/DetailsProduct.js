@@ -76,7 +76,7 @@ const DetailsProduct = () => {
                 <div className="Product_Details mx-md-5">
                     <div className="row ">
                         <div className="col-lg-6 ">
-                            <div className="Detailsimg SkillCArd border10px">
+                            <div data-aos="zoom-in" data-aos-duration="1200" className="Detailsimg SkillCArd border10px">
                                 <img className='w-full' src={ProductDetails?.image} alt="" />
                             </div>
                         </div>

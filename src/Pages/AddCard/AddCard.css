@@ -92,4 +92,6 @@
 
 .hightss {
     height: 100vh !important;
+    position: relative;
+    z-index: -1000;
 }

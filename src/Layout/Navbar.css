@@ -3,7 +3,7 @@
     position: fixed !important;
     top: 0;
     z-index: 4000 !important;
-    width: 100% !important;
+    width: 100vw !important;
     color: #e3a300;
     padding: 10px 5px !important;
 }

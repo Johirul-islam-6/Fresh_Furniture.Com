@@ -20,9 +20,12 @@ const ServicesCategory = () => {
         <>
             {/* ========================Cetagory base Furniture ==================== */}
             <div className="scetion py-4">
-                <h1 className="text-center Larg_Text py-2">Cetagorys products</h1>
-                <h6 className="text-center Small_Text px-5 pb-4">Classic furniture, lighting and decoration collections. <br />
-                    Proudly designed htmlFor everyday living.</h6>
+                <div data-aos="fade-down" data-aos-duration="2500">
+                    <h1 className="text-center Larg_Text py-2">Cetagorys products</h1>
+                    <h6 className="text-center Small_Text px-5 pb-5">Classic furniture, lighting and decoration collections. <br />
+                        Proudly designed htmlFor everyday living.</h6>
+                </div>
+
 
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
@@ -122,7 +125,13 @@ const ServicesCategory = () => {
                             <div className="blank"></div>
                         </div>
                         <div className="col-lg-6 col-12 d-flex ">
-                            <div className="d-content py-sm-5 w-full">
+                            <div data-aos="fade-left" data-aos-duration="1500" className="d-content py-sm-5 w-full d-none d-md-block">
+                                <h1>Upcoming furniture
+                                    collection</h1>
+                                <p className='py-3 px-1'>Typically, furniture from the modernist tradition is constructed from natural materials such as wood, leather, and linen. Many pieces also incorporate metal into their designs, helping modern furniture present a visually “lighter” and less cluttered appearance when compared to more traditional styles.</p>
+                                <Link to={`upcoming`} className="btn btn-primary py-3 fw-semibold ">SHOW FURNITURE</Link>
+                            </div>
+                            <div className="d-content py-sm-5 w-full d-md-none">
                                 <h1>Upcoming furniture
                                     collection</h1>
                                 <p className='py-3 px-1'>Typically, furniture from the modernist tradition is constructed from natural materials such as wood, leather, and linen. Many pieces also incorporate metal into their designs, helping modern furniture present a visually “lighter” and less cluttered appearance when compared to more traditional styles.</p>
@@ -136,13 +145,16 @@ const ServicesCategory = () => {
             {/* ==============================Full Home Decoretion ========================== */}
             <section className="FullHome_Decoretion">
                 <div className="container">
-                    <h1 className="text-center Larg_Text py-2">Full Home Decoration Services</h1>
-                    <h6 className="text-center Small_Text px-5 pb-4">Use the following content marketing tips to strengthen <br></br>your online presence as a home décor brand.</h6>
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <h1 className="text-center Larg_Text py-2">Full Home Decoration Services</h1>
+                        <h6 className="text-center Small_Text px-5 pb-4">Use the following content marketing tips to strengthen <br></br>your online presence as a home décor brand.</h6>
+
+                    </div>
 
                     <div className="row container-fluid d-flex justify-content-center">
                         <div className="col-lg-4 col-md-6 col-12">
 
-                            <div className="products-boxs">
+                            <div data-aos="zoom-in-down" data-aos-duration="1500" className="products-boxs">
                                 <PhotoProvider>
                                     <PhotoView src={Home1}>
                                         <img className='w-100' src={Home1} alt="" />
@@ -160,7 +172,7 @@ const ServicesCategory = () => {
 
                         <div className="col-lg-4 col-md-6 col-12">
 
-                            <div className="products-boxs">
+                            <div data-aos="zoom-in" data-aos-duration="1500" className="products-boxs">
                                 <PhotoProvider>
                                     <PhotoView src='https://mydecorative.com/wp-content/uploads/2019/04/living-room-furniture.gif'>
                                         <img className='w-100' src='https://mydecorative.com/wp-content/uploads/2019/04/living-room-furniture.gif' alt="" />
@@ -178,7 +190,7 @@ const ServicesCategory = () => {
 
                         <div className="col-lg-4 col-md-6 col-12">
 
-                            <div className="products-boxs my-sm-3 my-md-0">
+                            <div data-aos="zoom-in-down" data-aos-duration="1500" className="products-boxs my-sm-3 my-md-0">
                                 <PhotoProvider>
                                     <PhotoView src={Home2} >
                                         <img className='w-100' src={Home2} alt="" />
@@ -218,55 +230,63 @@ const ServicesCategory = () => {
                 </div>
             </section>
             {/* ==========Messaging section========== */}
-            <section
-                // data-aos="fade-up"
-                // data-aos-anchor-placement="top-center"
-                // data-aos-duration="1000"
-                className="my-4">
-                <h1 className="text-center Larg_Text pt-2">Any InForation Collection Our Furniture Zoon</h1>
-                <h6 className="text-center Small_Text px-5 pb-4">Please Write This From Message Field. <br></br> What's your Problem ?</h6>
-                <form className='' action="https://getFor.io/f/346003ba-86ef-4b17-9fc1-6ebd93a3af1a" method="POST">
+            <section className="my-4">
+                <div data-aos="fade-up"
+                    data-aos-duration="1500">
+                    <h1 className="text-center Larg_Text pt-2">Any InForation Collection Our Furniture Zoon</h1>
+                    <h6 className="text-center Small_Text px-5 pb-4">Please Write This From Message Field. <br></br> What's your Problem ?</h6>
 
-
-                    <div className="row mx-md-3 mx-2">
-
-                        <div className="col-lg-12 col-md-12 ">
-                            <div className="Fore2 p-5 rounded-4 mx-auto w-full  mx-auto">
-                                <p className=" text-uppercase text-center text-white">Send Message Here</p>
-
-
-                                <div className="block">
-                                    <input
-                                        type="text" name="name"
-                                        id='name'
-                                        placeholder='Your full Name'
-                                        className="For-group pb-2 rounded-3 px-1 pt-2 w-100 justify-center flex mx-auto"
-                                        data-temp-mail-org='0'
-                                        required />
-
-                                </div>
-                                <div className="block py-3">
-                                    <input type="email" name="email" id='email' placeholder="Your Email" className="For-group w-100 justify-center flex mx-auto For-group pb-2 rounded-3 px-1 pt-2" data-temp-mail-org='0' required />
-                                </div>
-                                <div className="block ">
-                                    <input name='phone' id='phone' type="number" placeholder="Your Phone Number" className="For-group w-100 justify-center flex mx-auto For-group pb-2 rounded-3 px-1 pt-2" data-temp-mail-org='0' required />
-                                </div>
-                                <div className="block">
-                                    <textarea type="text" name="message" className="textarea textarea-info For-group pb-4 px-1 pt-1  w-100 justify-center flex mx-auto mt-3" placeholder="Message Write Here"></textarea>
-                                </div>
-                                <div className="d-flex justify-content-center my-3 ">
-                                    <button type="submit" className='w-100 mx-auto py-2 btn btn-primary' >Submite</button>
-                                </div>
-
-
-
-
-                            </div>
-                        </div>
+                </div>
+                <div className="row w-[100vw] h-[70vh]">
+                    <div className="col-lg-6 col-md-6 col-12  d-flex justify-content-center align-items-center">
+                        <img className='w-50 h-50 d-none d-md-block' src="https://images.getstark.co/marketing/highlights/homepage__community.webp" alt="" />
                     </div>
+                    <div className="col-lg-6 col-md-6 col-12">
+                        <form data-aos="fade-zoon-in"
+                            data-aos-duration="1500" className='' action="https://getFor.io/f/346003ba-86ef-4b17-9fc1-6ebd93a3af1a" method="POST">
+
+                            <div className="row">
+
+                                <div className="col-lg-12 col-md-12 ">
+                                    <div className="p-5 from_background">
+                                        <p className=" text-uppercase text-center text-white">Send Message Here</p>
 
 
-                </form>
+                                        <div className="block">
+                                            <input
+                                                type="text" name="name"
+                                                id='name'
+                                                placeholder='Your full Name'
+                                                className="For-group pb-2 rounded-3 px-1 pt-2 w-100 justify-center flex mx-auto input_border"
+                                                data-temp-mail-org='0'
+                                                required />
+
+                                        </div>
+                                        <div className="block py-3">
+                                            <input type="email" name="email" id='email' placeholder="Your Email" className="For-group input_border w-100 justify-center flex mx-auto For-group pb-2 rounded-3 px-1 pt-2" data-temp-mail-org='0' required />
+                                        </div>
+                                        <div className="block ">
+                                            <input name='phone' id='phone' type="number" placeholder="Your Phone Number" className="input_border For-group w-100 justify-center flex mx-auto For-group pb-2 rounded-3 px-1 pt-2" data-temp-mail-org='0' required />
+                                        </div>
+                                        <div className="block">
+                                            <textarea type="text" name="message" className="textarea input_border textarea-info For-group pb-4 px-1 pt-1  w-100 justify-center flex mx-auto mt-3" placeholder="Type Your Message"></textarea>
+                                        </div>
+                                        <div className="d-flex justify-content-center my-3 ">
+                                            <button type="submit" className='w-100 mx-auto py-2 btn btn-primary' >Submite</button>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+
             </section>
 
             <section className="Our_client pb-2 pt-5">
@@ -285,62 +305,6 @@ const ServicesCategory = () => {
 
             </section>
 
-            {/* <div className="all">
-                <div className="col-lg-4 col-md-6 col-12">
-
-                    <div className="products-box">
-                        <img className='w-100' src={Sofa} alt="" />
-                        <div className="products-details">
-                            <div className="p-top d-flex justify-content-between pt-2 ">
-                                <a className="d-block" href="#">Bolero Sofa</a>
-                                <span className="d-block">Details</span>
-                            </div>
-                            <div className="p-bottom d-flex justify-content-between">
-                                <div className="wrapper">
-                                    <a className="cta bg-primary" href="#">
-                                        <span className='text-white'>View Details</span>
-
-                                    </a>
-                                </div>
-                                <div className="wrapper">
-                                    <a className="cta" href="#">
-                                        <span className='text-white'>Add to Card</span>
-
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-12">
-
-                    <div className="products-box">
-                        <img className='w-100' src={image3} alt="" />
-                        <div className="products-details">
-                            <div className="p-top d-flex justify-content-between pt-2 ">
-                                <a className="d-block" href="#">Bolero Sofa</a>
-                                <span className="d-block">Details</span>
-                            </div>
-                            <div className="p-bottom d-flex justify-content-between">
-                                <div className="wrapper">
-                                    <a className="cta bg-primary" href="#">
-                                        <span className='text-white'>View Details</span>
-
-                                    </a>
-                                </div>
-                                <div className="wrapper">
-                                    <a className="cta" href="#">
-                                        <span className='text-white'>Add to Card</span>
-
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-           </div> */}
 
         </>
     );

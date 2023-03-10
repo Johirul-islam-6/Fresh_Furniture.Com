@@ -110,9 +110,7 @@ const AddCard = () => {
                     </div>
                     <div className="col-md-5 d-none d-lg-block text-white hightss">
                         <div className="row addToCardrightSite d-flex justify-content-center align-items-center">
-
                             <div className="col-lg-12">
-
                                 <img className='w-100' src="https://thumbs.gfycat.com/GrouchySoupyArgali-max-1mb.gif" alt="" />
                                 <br /><br /><br /><br /><br />
                                 <button className='btn btn-success w-75 d-block mx-auto py-3 discountoffer'>Buy Now</button>

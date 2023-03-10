@@ -118,7 +118,7 @@ const AllProduct = () => {
                         products?.map(product => <>
 
                             <div key={product?._id} className="col-lg-3 col-md-4">
-                                <div className="products-box">
+                                <div data-aos="zoom-in" data-aos-duration="1200" className="products-box">
                                     <img className='w-100 ' src={product?.image} alt="" />
                                     <div className="products-details">
                                         <div className="p-top d-flex justify-content-between">
