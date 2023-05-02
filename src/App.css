@@ -67,3 +67,14 @@ font-family: 'PT Sans Narrow', sans-serif; */
 .marquees {
     font-size: 16px;
 }
+
+
+/* -------------home massage image------------- */
+.massage_Image {
+    width: 70% !important;
+    height: 80% !important;
+}
+
+.For-group {
+    padding: 13px 0 !important;
+}

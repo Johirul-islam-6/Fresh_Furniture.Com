@@ -4,20 +4,16 @@ const MessageForm = () => {
     return (
         <>
             <section
-                // data-aos="fade-up"
-                // data-aos-anchor-placement="top-center"
-                // data-aos-duration="1000"
                 className="my-4">
                 <h1 className="text-center Larg_Text pt-2">Any InForation Collection Our Furniture Zoon</h1>
                 <h6 className="text-center Small_Text px-5 pb-4">Please Write This From Message Field. <br></br> What's your Problem ?</h6>
-                <form className='' action="https://getFor.io/f/346003ba-86ef-4b17-9fc1-6ebd93a3af1a" method="POST">
+                <div className="row mx-md-3 mx-2">
+                    <div className="col-lg-7 col-md-6 d-flex justify-content-center mb-5 mb-md-0">
+                        <img className='contactimg p-3 bg-black' src="https://img.freepik.com/free-vector/contact-us-concept-landing-page_52683-18637.jpg?w=2000" alt="" />
+                    </div>
+                    <div className="col-lg-5 col-md-6">
+                        <form className='' action="https://getFor.io/f/346003ba-86ef-4b17-9fc1-6ebd93a3af1a" method="POST">
 
-
-                    <div className="row mx-md-3 mx-2">
-                        <div className="col-lg-7 col-md-6 d-flex justify-content-center mb-5 mb-md-0">
-                            <img className='contactimg p-3 bg-black' src="https://img.freepik.com/free-vector/contact-us-concept-landing-page_52683-18637.jpg?w=2000" alt="" />
-                        </div>
-                        <div className="col-lg-5 col-md-6">
                             <div className="Fore p-5 mx-auto ">
                                 <p className=" text-uppercase text-center text-white">Send Message Here</p>
 
@@ -49,12 +45,16 @@ const MessageForm = () => {
 
 
                             </div>
-                        </div>
+
+
+
+
+                        </form>
                     </div>
-
-
-                </form>
+                </div>
             </section>
+
+
         </>
     );
 };

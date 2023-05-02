@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './AddCard.css'
 import imgss from '../../Assent/img/asset 12.jpeg'
 import { useQuery } from '@tanstack/react-query';
@@ -10,7 +10,7 @@ const AddCard = () => {
 
     const { user, loding } = useContext(AuthContext);
     const navigate = useNavigate()
-
+    const [productsss, setProductst] = useState()
     const url = `https://furniture-collections-server-site.vercel.app/allCard/${user?.email}`;
 
 
@@ -27,6 +27,10 @@ const AddCard = () => {
         }
     })
 
+    useEffect(() => {
+        setProductst(products)
+        // console.log(products)
+    }, [products])
 
     // Buy Product
     const [ProductDetails, setProduct] = useState()
@@ -55,6 +59,8 @@ const AddCard = () => {
 
 
 
+
+
     const DeleteProduct = (product) => {
 
         fetch(`https://furniture-collections-server-site.vercel.app/deleteCard/${product?._id}`, {
@@ -79,7 +85,8 @@ const AddCard = () => {
                     <div className="col-lg-7 col-md-12 responsives">
                         <div className="container">
                             {
-                                products?.map(product => <>
+
+                                productsss?.map(product => <>
                                     <div key={product?._id} className="row mx-md-3 card_box mb-2 mx-2 mainrow">
                                         <div className="col-lg-3 col-md-3 d-flex justify-content-center">
                                             <img className='cardImage' src={product?.image} alt="" />

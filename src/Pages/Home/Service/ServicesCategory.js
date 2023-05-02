@@ -20,7 +20,7 @@ const ServicesCategory = () => {
         <>
             {/* ========================Cetagory base Furniture ==================== */}
             <div className="scetion py-4">
-                <div data-aos="fade-down" data-aos-duration="2500">
+                <div data-aos="fade-right" data-aos-duration="2500">
                     <h1 className="text-center Larg_Text py-2">Cetagorys products</h1>
                     <h6 className="text-center Small_Text px-5 pb-5">Classic furniture, lighting and decoration collections. <br />
                         Proudly designed htmlFor everyday living.</h6>
@@ -125,7 +125,7 @@ const ServicesCategory = () => {
                             <div className="blank"></div>
                         </div>
                         <div className="col-lg-6 col-12 d-flex ">
-                            <div data-aos="fade-left" data-aos-duration="1500" className="d-content py-sm-5 w-full d-none d-md-block">
+                            <div data-aos="zoom-in" data-aos-duration="1500" className="d-content py-sm-5 w-full d-none d-md-block">
                                 <h1>Upcoming furniture
                                     collection</h1>
                                 <p className='py-3 px-1'>Typically, furniture from the modernist tradition is constructed from natural materials such as wood, leather, and linen. Many pieces also incorporate metal into their designs, helping modern furniture present a visually “lighter” and less cluttered appearance when compared to more traditional styles.</p>
@@ -145,7 +145,7 @@ const ServicesCategory = () => {
             {/* ==============================Full Home Decoretion ========================== */}
             <section className="FullHome_Decoretion">
                 <div className="container">
-                    <div data-aos="fade-right" data-aos-duration="1000">
+                    <div data-aos="zoom-in" data-aos-duration="1000">
                         <h1 className="text-center Larg_Text py-2">Full Home Decoration Services</h1>
                         <h6 className="text-center Small_Text px-5 pb-4">Use the following content marketing tips to strengthen <br></br>your online presence as a home décor brand.</h6>
 
@@ -234,45 +234,43 @@ const ServicesCategory = () => {
                 <div data-aos="fade-up"
                     data-aos-duration="1500">
                     <h1 className="text-center Larg_Text pt-2">Any InForation Collection Our Furniture Zoon</h1>
-                    <h6 className="text-center Small_Text px-5 pb-4">Please Write This From Message Field. <br></br> What's your Problem ?</h6>
+                    <h6 className="text-center Small_Text px-5 pb-4">Please, Write This From in Message Field. <br></br> What's your Problem ?</h6>
 
                 </div>
-                <div className="row w-[100vw] h-[70vh]">
-                    <div className="col-lg-6 col-md-6 col-12  d-flex justify-content-center align-items-center">
-                        <img className='w-50 h-50 d-none d-md-block' src="https://images.getstark.co/marketing/highlights/homepage__community.webp" alt="" />
+                <div className="row mt-3">
+                    <div className="col-lg-6 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                        <img className='d-none d-md-block p-5 massage_Image' src="https://images.getstark.co/marketing/highlights/homepage__community.webp" alt="" />
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                         <form data-aos="fade-zoon-in"
                             data-aos-duration="1500" className='' action="https://getFor.io/f/346003ba-86ef-4b17-9fc1-6ebd93a3af1a" method="POST">
-
                             <div className="row">
-
                                 <div className="col-lg-12 col-md-12 ">
-                                    <div className="p-5 from_background">
-                                        <p className=" text-uppercase text-center text-white">Send Message Here</p>
+                                    <div className="p-5 from_background ">
+                                        <p className=" text-uppercase text-center text-white">Write Message Here</p>
 
 
-                                        <div className="block">
+                                        <div className="block mx-2">
                                             <input
                                                 type="text" name="name"
                                                 id='name'
                                                 placeholder='Your full Name'
-                                                className="For-group pb-2 rounded-3 px-1 pt-2 w-100 justify-center flex mx-auto input_border"
+                                                className="For-group  rounded-3 ps-3  w-100 justify-center flex mx-auto input_border"
                                                 data-temp-mail-org='0'
                                                 required />
 
                                         </div>
-                                        <div className="block py-3">
-                                            <input type="email" name="email" id='email' placeholder="Your Email" className="For-group input_border w-100 justify-center flex mx-auto For-group pb-2 rounded-3 px-1 pt-2" data-temp-mail-org='0' required />
+                                        <div className="block my-3 mx-2">
+                                            <input type="email" name="email" id='email' placeholder="Your Email" className="For-group input_border w-100 justify-center flex mx-auto For-group  rounded-3 ps-3 " data-temp-mail-org='0' required />
                                         </div>
-                                        <div className="block ">
-                                            <input name='phone' id='phone' type="number" placeholder="Your Phone Number" className="input_border For-group w-100 justify-center flex mx-auto For-group pb-2 rounded-3 px-1 pt-2" data-temp-mail-org='0' required />
+                                        <div className="block mx-2">
+                                            <input name='phone' id='phone' type="number" placeholder="Your Phone Number" className="For-group input_border For-group w-100 justify-center flex mx-auto For-group pb-2 rounded-3 ps-3 pt-2" data-temp-mail-org='0' required />
                                         </div>
-                                        <div className="block">
-                                            <textarea type="text" name="message" className="textarea input_border textarea-info For-group pb-4 px-1 pt-1  w-100 justify-center flex mx-auto mt-3" placeholder="Type Your Message"></textarea>
+                                        <div className="block mx-2">
+                                            <textarea type="text" name="message" className="For-group textarea input_border textarea-info For-group pb-4 ps-3 pt-1  w-100 justify-center flex mx-auto mt-3" placeholder="Type Your Message"></textarea>
                                         </div>
-                                        <div className="d-flex justify-content-center my-3 ">
-                                            <button type="submit" className='w-100 mx-auto py-2 btn btn-primary' >Submite</button>
+                                        <div className="d-flex justify-content-center mt-3 mx-2">
+                                            <button type="submit" className='w-100 mx-auto py-3 btn btn-primary' >Submite</button>
                                         </div>
 
 
